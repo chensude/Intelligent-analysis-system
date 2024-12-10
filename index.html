@@ -30,9 +30,19 @@
             </select>
         </div>
 
+        <div id="loading-message" style="display: none; text-align: center; margin: 20px;">
+            正在解析文档，请稍候...
+        </div>
+
         <div class="questions-container" id="questionsContainer">
             <!-- 题目将在这里显示 -->
         </div>
+
+        <div class="options-container">
+            <!-- 选项内容 -->
+        </div>
+
+        <div id="error-message" style="color: red; margin-top: 10px; display: none;"></div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.0/mammoth.browser.min.js"></script>
     <script src="script.js"></script>
