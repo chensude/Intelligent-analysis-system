@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能题库解析系统</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>智能题库解析系统</h1>
+        
+        <div class="upload-section">
+            <div class="upload-box" id="dropZone">
+                <input type="file" id="fileInput" accept=".doc,.docx,.pdf" hidden>
+                <label for="fileInput" class="upload-label">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0yMSAxNXY0YTIgMiAwIDAgMS0yIDJINWEyIDIgMCAwIDEtMi0ydi00Ij48L3BhdGg+PHBvbHlsaW5lIHBvaW50cz0iMTcgOCAxMiAzIDcgOCI+PC9wb2x5bGluZT48bGluZSB4MT0iMTIiIHkxPSIzIiB4Mj0iMTIiIHkyPSIxNSI+PC9saW5lPjwvc3ZnPg==" alt="上传图标" class="upload-icon">
+                    <p>点击或拖拽文件到此处上传</p>
+                    <p class="file-types">支持的格式: PDF, Word文档</p>
+                </label>
+            </div>
+        </div>
+
+        <div class="filter-section">
+            <select id="questionType">
+                <option value="all">所有题型</option>
+                <option value="single">单选题</option>
+                <option value="multiple">多选题</option>
+                <option value="essay">简答题</option>
+            </select>
+        </div>
+
+        <div class="questions-container" id="questionsContainer">
+            <!-- 题目将在这里显示 -->
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.0/mammoth.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
